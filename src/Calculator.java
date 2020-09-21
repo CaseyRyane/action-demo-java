@@ -1,4 +1,4 @@
-package simpleAdd;
+import java.util.*;
 
 public class Calculator {
 
@@ -15,6 +15,8 @@ public class Calculator {
 	
 	public double customOperation(double a, double b) {
 		double result = add(a, b) + multiply(a,b);
+		if (result < -2)
+			System.out.println("Negative result");
 		return result;
 	}
 }
